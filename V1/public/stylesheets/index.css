@@ -1,0 +1,56 @@
+.jumbotron {
+    background: url('https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-903ea3cb.jpg') center center / cover no-repeat;
+}
+
+body{
+    background-color: #273746; 
+    color: white;
+}
+h1{
+    text-emphasis-color: white;
+    color: #273746;
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.containerMain{
+    display:block;
+    width:calc(60px * 18);
+    min-height: 100%;
+    min-width: 100%;
+    padding:5px;
+    background-color: gray;
+    margin: 0 auto;
+  }
+
+.element{
+    background: #f9a21d;
+    height: 50px;
+    margin: 5px;
+    transition: 230ms;
+    flex-shrink: 1;
+    border-radius: 7px;
+    flex-basis: 50px;
+}
+
+.element:hover{
+    transform: scale(2.0);
+    background:#2ECCEC;
+    z-index: 2;
+}
+
+.row{
+    display:flex;
+    flex-wrap: nowrap;
+    margin: 5px;
+    justify-content:space-between;
+  }
+
+  .row2 .element:nth-child(3), .row3 .element:nth-child(3){
+    margin-left:auto;
+  }
+
+  .row4, .row5, .row6, .row7{
+    /* justify-content:space-between; */
+  }
