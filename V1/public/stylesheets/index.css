@@ -3,9 +3,9 @@
 }
 
 body{
-    background-color: #273746; 
-    color: white;
+    background-color: #273746;
 }
+
 h1{
     text-emphasis-color: white;
     color: #273746;
@@ -14,43 +14,38 @@ h1{
     font-family: 'Orbitron', sans-serif;
 }
 
-.containerMain{
-    display:block;
-    width:calc(60px * 18);
-    min-height: 100%;
-    min-width: 100%;
-    padding:5px;
-    background-color: gray;
-    margin: 0 auto;
-  }
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 90%;
+  width: 90%;
+  justify-content: space-around;
+}
+
+.row {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+}
 
 .element{
-    background: #f9a21d;
-    height: 50px;
-    margin: 5px;
-    transition: 230ms;
-    flex-shrink: 1;
-    border-radius: 7px;
-    flex-basis: 50px;
+  background-color: purple;
+  display: flex;
+  flex-shrink: 1;
+  width: 62px;
+  height: 80px;
+  min-width: auto;
+  min-height: auto;
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 3px;
+  padding: auto;
+  border-radius: 15%;
+  flex-basis: 80px;
+  transition: 0.3s background;
 }
 
-.element:hover{
-    transform: scale(2.0);
-    background:#2ECCEC;
-    z-index: 2;
+.element:hover {
+  background: rgb(45, 45, 89);
 }
-
-.row{
-    display:flex;
-    flex-wrap: nowrap;
-    margin: 5px;
-    justify-content:space-between;
-  }
-
-  .row2 .element:nth-child(3), .row3 .element:nth-child(3){
-    margin-left:auto;
-  }
-
-  .row4, .row5, .row6, .row7{
-    /* justify-content:space-between; */
-  }
